@@ -1,36 +1,38 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-name: Flutter_Tests
+name: Flutter CI
 
 on:
-  push:
-    branches: [ "*" ]
   pull_request:
-    branches: [ "*" ]
+    branches:
+      - '*'
+  push:
+    branches:
+      - '*'
 
 jobs:
-  tests:
+  build:
+    name: Build and Test
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout the code
-        uses: actions/checkout@v2
-      - name: Install and set Flutter version
-        uses: subosito/flutter-action@v1.4.0
-        with:
-          flutter-version: '3.1.1'
-      - name: Restore packages
-        run: flutter pub get
-      - name: Analyze
-        run: flutter analyze
-      - name: Run tests
-        run: flutter test --coverage
-      - name: Upload coverage to codecov
-        run: curl -s https://codecov.io/bash
-        shell: bash
-      - name: Upload coverage to codecov
-        run: curl -s https://codecov.io/bash -t $
-        shell: bash
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v9
+      
+    - name: Cache Flutter packages
+      uses: actions/cache@v2
+      with:
+        path: ~/.pub-cache
+        key: flutter-packages-${{ runner.os }}-${{ hashFiles('**/pubspec.yaml') }}
+      
+    - name: Install Dependencies
+      run: flutter pub get
+
+    - name: Run Tests
+      run: flutter test --coverage
+
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
+      env:
+        CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
