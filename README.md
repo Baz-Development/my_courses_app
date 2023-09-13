@@ -1,0 +1,67 @@
+# My Courses App
+ An flutter app with Clean Architecture and TDD
+a# My Courses App
+
+O My Courses App é um projeto desenvolvido em Flutter, criado com o objetivo principal de aprimorar o entendimento de Clean Architecture e Test-Driven Development (TDD). Este aplicativo permite que os usuários se matriculem em cursos e os acompanhem de maneira organizada e eficaz.
+
+## Visão Geral
+
+O My Courses App foi desenvolvido como uma aplicação de exemplo para demonstrar as melhores práticas de desenvolvimento de software, incluindo a implementação da arquitetura Clean Architecture e a aplicação rigorosa do TDD. O foco principal do projeto é a qualidade do código e a manutenção, seguindo os princípios SOLID e a separação de preocupações.
+
+## Funcionalidades Principais
+
+- **Matrícula em Cursos:** Os usuários podem pesquisar e se matricular em cursos disponíveis.
+
+- **Acompanhamento de Progresso:** Uma vez matriculados, os usuários podem acompanhar seu progresso em cada curso.
+
+- **Conteúdo do Curso:** Os cursos podem incluir módulos, lições, quizzes e outros tipos de conteúdo.
+
+- **Clean Architecture:** O projeto é estruturado seguindo os princípios da Clean Architecture, garantindo uma separação clara das camadas de negócios, apresentação e dados.
+
+- **Test-Driven Development (TDD):** O desenvolvimento de recursos e funcionalidades é orientado por testes unitários, garantindo a robustez do código.
+
+## Estrutura do Projeto
+
+A estrutura do projeto segue a organização típica da Clean Architecture, com as seguintes camadas principais:
+
+- **Domain:** A camada de domínio contém a lógica de negócios, as entidades e os casos de uso da aplicação. Ela é independente da plataforma.
+
+## Instalação e Configuração
+
+Para configurar e executar o My Courses App localmente, siga estas etapas:
+
+1. Clone este repositório para o seu ambiente de desenvolvimento:
+
+   ```bash
+   git clone https://github.com/felipe-baz/my-courses-app.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```bash
+   cd my-courses-app
+   ```
+
+3. Instale as dependências do Flutter:
+
+   ```bash
+   flutter pub get
+   ```
+
+4. Execute o aplicativo em um emulador ou dispositivo físico:
+
+   ```bash
+   flutter run
+   ```
+
+## Contribuição
+
+A contribuição para o projeto My Courses App é bem-vinda! Sinta-se à vontade para abrir problemas (issues) ou enviar solicitações de pull (pull requests) para melhorias, correções de bugs ou novas funcionalidades.
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE). Sinta-se à vontade para usá-lo e modificá-lo de acordo com suas necessidades.
+
+---
+
+Esperamos que o My Courses App seja uma ferramenta útil para aprimorar seu conhecimento em Clean Architecture e TDD, além de servir como um exemplo de boas práticas de desenvolvimento de aplicativos Flutter. Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato com a equipe de desenvolvimento. Aproveite o aprendizado e aprimoramento das suas habilidades de desenvolvimento!
