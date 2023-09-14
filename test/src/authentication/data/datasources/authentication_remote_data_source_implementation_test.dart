@@ -5,8 +5,8 @@ import 'package:http/http.dart' as http;
 import 'package:mocktail/mocktail.dart';
 import 'package:my_courses_app/src/authentication/data/datasources/authentication_remote_data_source.dart';
 import 'package:my_courses_app/src/authentication/data/models/user_model.dart';
-import 'package:my_courses_app/src/core/errors/exception.dart';
-import 'package:my_courses_app/src/core/utils/constants.dart';
+import 'package:my_courses_app/core/errors/exception.dart';
+import 'package:my_courses_app/core/utils/constants.dart';
 
 class MockClient extends Mock implements http.Client {}
 

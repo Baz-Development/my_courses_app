@@ -2,10 +2,10 @@ import 'package:bloc_test/bloc_test.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
+import 'package:my_courses_app/core/errors/failure.dart';
 import 'package:my_courses_app/src/authentication/domain/usecases/create_user.dart';
 import 'package:my_courses_app/src/authentication/domain/usecases/get_users.dart';
 import 'package:my_courses_app/src/authentication/presentation/cubit/authentication_cubit.dart';
-import 'package:my_courses_app/src/core/errors/failure.dart';
 
 class MockGetUsers extends Mock implements GetUsers {}
 class MockCreateUser extends Mock implements CreateUser {}

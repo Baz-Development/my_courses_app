@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'package:my_courses_app/src/core/errors/exception.dart';
+import 'package:my_courses_app/core/errors/exception.dart';
 
 abstract class Failure extends Equatable {
   const Failure({required this.message, required this.statusCode});

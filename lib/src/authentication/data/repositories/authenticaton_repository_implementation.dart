@@ -2,9 +2,9 @@ import 'package:dartz/dartz.dart';
 import 'package:my_courses_app/src/authentication/data/datasources/authentication_data_source.dart';
 import 'package:my_courses_app/src/authentication/domain/entities/user.dart';
 import 'package:my_courses_app/src/authentication/domain/repositories/authentication_repository.dart';
-import 'package:my_courses_app/src/core/errors/exception.dart';
-import 'package:my_courses_app/src/core/errors/failure.dart';
-import 'package:my_courses_app/src/core/utils/typedef.dart';
+import 'package:my_courses_app/core/errors/exception.dart';
+import 'package:my_courses_app/core/errors/failure.dart';
+import 'package:my_courses_app/core/utils/typedef.dart';
 
 class AuthenticationRepositoryImplementation implements AuthenticationRepository {
   final AuthenticationDataSource _datasource;

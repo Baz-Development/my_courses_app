@@ -1,6 +1,5 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:http/http.dart';
 import 'package:my_courses_app/src/authentication/domain/entities/user.dart';
 import 'package:my_courses_app/src/authentication/domain/usecases/create_user.dart';
 import 'package:my_courses_app/src/authentication/domain/usecases/get_users.dart';
