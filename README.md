@@ -1,6 +1,6 @@
 # My Courses App
 
-O My Courses App é um projeto desenvolvido em Flutter, criado com o objetivo principal de aprimorar o entendimento de Clean Architecture e Test-Driven Development (TDD). Este aplicativo permite que os usuários se matriculem em cursos e os acompanhem de maneira organizada e eficaz.
+O My Courses App é um projeto desenvolvido em Flutter, criado com o objetivo principal de aprimorar o entendimento de Clean Architecture, Test-Driven Development (TDD), bem como a implementação dos padrões Bloc e Cubit.
 
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
@@ -14,29 +14,25 @@ O My Courses App é um projeto desenvolvido em Flutter, criado com o objetivo pr
 
 ## Visão Geral
 
-O My Courses App foi desenvolvido como uma aplicação de exemplo para demonstrar as melhores práticas de desenvolvimento de software, incluindo a implementação da arquitetura Clean Architecture e a aplicação rigorosa do TDD. O foco principal do projeto é a qualidade do código e a manutenção, seguindo os princípios SOLID e a separação de preocupações.
+O My Courses App foi desenvolvido como uma aplicação de exemplo para demonstrar as melhores práticas de desenvolvimento de software, incluindo a implementação da arquitetura Clean Architecture, o uso dos padrões Bloc e Cubit, e a aplicação rigorosa do TDD. O foco principal do projeto é a qualidade do código e a manutenção, seguindo os princípios SOLID e a separação de preocupações.
 
 ## Funcionalidades Principais
-
-- **Matrícula em Cursos:** Os usuários podem pesquisar e se matricular em cursos disponíveis.
-
-- **Acompanhamento de Progresso:** Uma vez matriculados, os usuários podem acompanhar seu progresso em cada curso.
-
-- **Conteúdo do Curso:** Os cursos podem incluir módulos, lições, quizzes e outros tipos de conteúdo.
 
 - **Clean Architecture:** O projeto é estruturado seguindo os princípios da Clean Architecture, garantindo uma separação clara das camadas de negócios, apresentação e dados.
 
 - **Test-Driven Development (TDD):** O desenvolvimento de recursos e funcionalidades é orientado por testes unitários, garantindo a robustez do código.
 
+- **Bloc e Cubit:** Utilizamos os padrões Bloc e Cubit para gerenciar o estado da aplicação de forma eficiente, tornando a aplicação mais previsível e fácil de manter.
+
 ## Estrutura do Projeto
 
 A estrutura do projeto segue a organização típica da Clean Architecture, com as seguintes camadas principais:
 
-- **Presentation:** Esta camada contém a interface do usuário e a lógica de apresentação. Aqui, as telas e widgets são desenvolvidos.
+- **Presentation:** Esta camada contém a interface do usuário e a lógica de apresentação, gerenciada através dos Blocs e Cubits.
 
-- **Domain:** A camada de domínio contém a lógica de negócios, as entidades e os casos de uso da aplicação. Ela é independente da plataforma.
+- **Domain:** A camada de domínio contém a lógica de negócios, as entidades e os casos de uso da aplicação. Ela é independente da plataforma e se beneficia da previsibilidade proporcionada pelo Bloc e Cubit.
 
-- **Data:** A camada de dados lida com a obtenção e persistência de dados. Isso inclui acesso a APIs externas, bancos de dados locais e armazenamento em cache.
+- **Data:** A camada de dados lida com a obtenção e persistência de dados. Isso inclui acesso a APIs externas, bancos de dados locais e armazenamento em cache, tudo gerenciado de forma eficiente pelo Bloc e Cubit.
 
 ## Instalação e Configuração
 
@@ -76,4 +72,4 @@ Este projeto está licenciado sob a [Licença MIT](LICENSE). Sinta-se à vontade
 
 ---
 
-Esperamos que o My Courses App seja uma ferramenta útil para aprimorar seu conhecimento em Clean Architecture e TDD, além de servir como um exemplo de boas práticas de desenvolvimento de aplicativos Flutter. Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato com a equipe de desenvolvimento. Aproveite o aprendizado e aprimoramento das suas habilidades de desenvolvimento!
+Esperamos que o My Courses App seja uma ferramenta útil para aprimorar seu conhecimento em Clean Architecture, TDD, Bloc e Cubit, além de servir como um exemplo de boas práticas de desenvolvimento de aplicativos Flutter. Se você tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato com a equipe de desenvolvimento. Aproveite o aprendizado e aprimoramento das suas habilidades de desenvolvimento!
