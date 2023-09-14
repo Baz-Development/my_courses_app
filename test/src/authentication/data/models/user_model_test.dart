@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:my_courses_app/src/authentication/data/models/user_model.dart';
 import 'package:my_courses_app/src/authentication/domain/entities/user.dart';
-import 'package:my_courses_app/src/core/utils/typedef.dart';
+import 'package:my_courses_app/core/utils/typedef.dart';
 
 import '../../../../fixtures/fixture_reader.dart';
 

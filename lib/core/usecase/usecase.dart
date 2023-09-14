@@ -1,4 +1,4 @@
-import 'package:my_courses_app/src/core/utils/typedef.dart';
+import 'package:my_courses_app/core/utils/typedef.dart';
 
 abstract class UsecaseWthParams<Type, Params> {
   const UsecaseWthParams();

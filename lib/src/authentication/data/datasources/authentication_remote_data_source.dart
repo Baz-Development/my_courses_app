@@ -3,9 +3,9 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:my_courses_app/src/authentication/data/datasources/authentication_data_source.dart';
 import 'package:my_courses_app/src/authentication/data/models/user_model.dart';
-import 'package:my_courses_app/src/core/errors/exception.dart';
-import 'package:my_courses_app/src/core/utils/constants.dart';
-import 'package:my_courses_app/src/core/utils/typedef.dart';
+import 'package:my_courses_app/core/errors/exception.dart';
+import 'package:my_courses_app/core/utils/constants.dart';
+import 'package:my_courses_app/core/utils/typedef.dart';
 
 abstract class AuthenticationRemoteDataSource extends AuthenticationDataSource {}
 
