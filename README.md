@@ -2,6 +2,16 @@
 
 O My Courses App é um projeto desenvolvido em Flutter, criado com o objetivo principal de aprimorar o entendimento de Clean Architecture e Test-Driven Development (TDD). Este aplicativo permite que os usuários se matriculem em cursos e os acompanhem de maneira organizada e eficaz.
 
+![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
+[![Open Issues](https://img.shields.io/github/issues-raw/Baz-Development/my_courses_app?style=for-the-badge)](https://github.com/Baz-Development/my_courses_app/issues)
+[![Closed Issues](https://img.shields.io/github/issues-closed-raw/Baz-Development/my_courses_app?style=for-the-badge)](https://github.com/Baz-Development/my_courses_app/issues?q=is%3Aissue+is%3Aclosed)
+[![Open Pulls](https://img.shields.io/github/issues-pr-raw/Baz-Development/my_courses_app?style=for-the-badge)](https://github.com/Baz-Development/my_courses_app/pulls)
+[![Closed Pulls](https://img.shields.io/github/issues-pr-closed-raw/Baz-Development/my_courses_app?style=for-the-badge)](https://github.com/Baz-Development/my_courses_app/pulls?q=is%3Apr+is%3Aclosed)
+[![Contributors](https://img.shields.io/github/contributors/Baz-Development/my_courses_app?style=for-the-badge)](https://github.com/Baz-Development/my_courses_app/graphs/contributors)
+[![Activity](https://img.shields.io/github/last-commit/Baz-Development/my_courses_app?style=for-the-badge&label=most%20recent%20activity)](https://github.com/Baz-Development/my_courses_app/pulse)
+[![codecov](https://codecov.io/gh/Baz-Development/my_courses_app/graph/badge.svg?token=W00LDE5U9N)](https://codecov.io/gh/Baz-Development/my_courses_app)
+
 ## Visão Geral
 
 O My Courses App foi desenvolvido como uma aplicação de exemplo para demonstrar as melhores práticas de desenvolvimento de software, incluindo a implementação da arquitetura Clean Architecture e a aplicação rigorosa do TDD. O foco principal do projeto é a qualidade do código e a manutenção, seguindo os princípios SOLID e a separação de preocupações.
