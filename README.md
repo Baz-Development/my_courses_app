@@ -24,6 +24,24 @@ O My Courses App foi desenvolvido como uma aplicação de exemplo para demonstra
 
 - **Bloc e Cubit:** Utilizamos os padrões Bloc e Cubit para gerenciar o estado da aplicação de forma eficiente, tornando a aplicação mais previsível e fácil de manter.
 
+## Telas
+
+Aqui, apresentamos um exemplo de tela do My Courses App para ilustrar a interface do usuário e como as funcionalidades são apresentadas aos usuários.
+
+### Tela de Início
+
+Na tela de início, inicialmente possui uma listagem com todos usuários cadastrados na plataforma.
+
+![Tela de Início](https://i.imgur.com/GFO03xe.png)
+
+### Criar Usuário
+
+Permite a criação de novos usuários.
+
+![Criar Usuário](https://i.imgur.com/SxRD58B.png)
+
+Esta é apenas uma amostra das telas disponíveis no My Courses App.
+
 ## Estrutura do Projeto
 
 A estrutura do projeto segue a organização típica da Clean Architecture, com as seguintes camadas principais:
@@ -33,6 +51,22 @@ A estrutura do projeto segue a organização típica da Clean Architecture, com 
 - **Domain:** A camada de domínio contém a lógica de negócios, as entidades e os casos de uso da aplicação. Ela é independente da plataforma e se beneficia da previsibilidade proporcionada pelo Bloc e Cubit.
 
 - **Data:** A camada de dados lida com a obtenção e persistência de dados. Isso inclui acesso a APIs externas, bancos de dados locais e armazenamento em cache, tudo gerenciado de forma eficiente pelo Bloc e Cubit.
+
+## Codecov
+
+Implementamos um sistema abrangente de cobertura de testes usando o Codecov e o GitHub Actions para garantir a qualidade do código no My Courses App. Isso nos ajuda a identificar áreas do código que não estão adequadamente testadas e a manter a integridade do projeto.
+
+### Cobertura de Testes
+
+Através do Codecov, monitoramos de perto a cobertura de testes em várias partes do projeto. Isso nos permite garantir que as funcionalidades e componentes essenciais sejam testados de forma adequada, proporcionando maior confiabilidade ao nosso aplicativo.
+
+Aqui está um exemplo do painel do Codecov para a branch de desenvolvimento (develop) do projeto:
+
+![Painel do Codecov - Branch Develop](https://i.imgur.com/AkzeiRW.png)
+
+Este painel oferece uma visão geral da cobertura de testes em nossa branch de desenvolvimento, permitindo-nos identificar áreas que podem precisar de testes adicionais.
+
+O uso do Codecov e do GitHub Actions demonstra nosso compromisso em manter a qualidade do código e garantir que o My Courses App seja uma aplicação sólida e confiável para nossos usuários.
 
 ## Instalação e Configuração
 
