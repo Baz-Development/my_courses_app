@@ -1,16 +1,16 @@
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:my_courses_app/src/authentication/data/datasources/authentication_data_source.dart';
+import 'package:my_courses_app/src/authentication/data/datasources/authentication_remote_data_source.dart';
 import 'package:my_courses_app/src/authentication/data/repositories/authenticaton_repository_implementation.dart';
 import 'package:my_courses_app/src/authentication/domain/entities/user.dart';
 import 'package:my_courses_app/core/errors/exception.dart';
 import 'package:my_courses_app/core/errors/failure.dart';
 
-class MockAuthDataSource extends Mock implements AuthenticationDataSource {}
+class MockAuthDataSource extends Mock implements AuthenticationRemoteDataSource {}
 
 void main() {
-  late AuthenticationDataSource dataSource;
+  late AuthenticationRemoteDataSource dataSource;
   late AuthenticationRepositoryImplementation repoImpl;
 
   setUp(() {
