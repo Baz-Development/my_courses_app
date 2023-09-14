@@ -1,6 +1,4 @@
 # My Courses App
- An flutter app with Clean Architecture and TDD
-a# My Courses App
 
 O My Courses App é um projeto desenvolvido em Flutter, criado com o objetivo principal de aprimorar o entendimento de Clean Architecture e Test-Driven Development (TDD). Este aplicativo permite que os usuários se matriculem em cursos e os acompanhem de maneira organizada e eficaz.
 
@@ -24,7 +22,11 @@ O My Courses App foi desenvolvido como uma aplicação de exemplo para demonstra
 
 A estrutura do projeto segue a organização típica da Clean Architecture, com as seguintes camadas principais:
 
+- **Presentation:** Esta camada contém a interface do usuário e a lógica de apresentação. Aqui, as telas e widgets são desenvolvidos.
+
 - **Domain:** A camada de domínio contém a lógica de negócios, as entidades e os casos de uso da aplicação. Ela é independente da plataforma.
+
+- **Data:** A camada de dados lida com a obtenção e persistência de dados. Isso inclui acesso a APIs externas, bancos de dados locais e armazenamento em cache.
 
 ## Instalação e Configuração
 
@@ -33,7 +35,7 @@ Para configurar e executar o My Courses App localmente, siga estas etapas:
 1. Clone este repositório para o seu ambiente de desenvolvimento:
 
    ```bash
-   git clone https://github.com/felipe-baz/my-courses-app.git
+   git clone https://github.com/seu-usuario/my-courses-app.git
    ```
 
 2. Navegue até o diretório do projeto:
