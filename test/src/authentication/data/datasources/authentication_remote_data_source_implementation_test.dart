@@ -41,20 +41,26 @@ void main() {
               createdAt: 'createdAt', fullname: 'fullname', avatar: 'avatar'),
           completes);
 
-      verify(() => client.post(Uri.https(kBaseUrl, kCreateUserEndpoint),
-          body: jsonEncode({
-            'createdAt': 'createdAt',
-            'fullname': 'fullname',
-            'avatar': 'avatar'
-          }))).called(1);
+      verify(() => client.post(
+            Uri.https(kBaseUrl, kCreateUserEndpoint),
+            body: jsonEncode({
+              'createdAt': 'createdAt',
+              'fullname': 'fullname',
+              'avatar': 'avatar'
+            }),
+            headers: {'Context-Type': 'application/json'},
+          )).called(1);
       verifyNoMoreInteractions(client);
     });
 
     test('should throw [ApiException] when the status code is not 200...299',
         () async {
       // Arrange
-      when(() => client.post(any(), body: any(named: 'body')))
-          .thenAnswer((_) async => http.Response("Bad Request", 400));
+      when(() => client.post(
+            any(),
+            body: any(named: 'body'),
+            headers: {'Context-Type': 'application/json'},
+          )).thenAnswer((_) async => http.Response("Bad Request", 400));
 
       // Act
       final methodCall = dataSource.createUser;
@@ -65,12 +71,15 @@ void main() {
               createdAt: 'createdAt', fullname: 'fullname', avatar: 'avatar'),
           throwsA(const ApiException(message: "Bad Request", statusCode: 400)));
 
-      verify(() => client.post(Uri.https(kBaseUrl, kCreateUserEndpoint),
-          body: jsonEncode({
-            'createdAt': 'createdAt',
-            'fullname': 'fullname',
-            'avatar': 'avatar'
-          }))).called(1);
+      verify(() => client.post(
+            Uri.https(kBaseUrl, kCreateUserEndpoint),
+            body: jsonEncode({
+              'createdAt': 'createdAt',
+              'fullname': 'fullname',
+              'avatar': 'avatar'
+            }),
+            headers: {'Context-Type': 'application/json'},
+          )).called(1);
       verifyNoMoreInteractions(client);
     });
   });
